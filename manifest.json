@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  
+  "name": "Wishlist",
+  "description": "Wishlist",
+  "author": "Null",
+  "version": "1.1",
+  "homepage_url": "Null",
+  "icons": {
+    "128": "icon128.png"
+  },
+  
+  "browser_action": {
+    "default_icon": {
+      "19": "icon19.png",
+      "38": "icon38.png"
+    },
+    "default_title": "Wishlist"
+  },
+  
+  "background": {
+    "page": "copy-url.html",
+    "persistent": false
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C"
+      }
+    }
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ]
+}
+
